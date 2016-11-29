@@ -25,6 +25,7 @@ import junit.framework.TestCase;
 
 import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector.Category;
 import org.apache.hadoop.hive.serde2.objectinspector.primitive.PrimitiveObjectInspectorFactory;
+import org.apache.hadoop.hive.serde2.objectinspector.primitive.PrimitiveObjectInspectorUtils;
 import org.apache.hadoop.hive.serde2.thrift.test.Complex;
 import org.apache.hadoop.hive.serde2.thrift.test.IntString;
 
@@ -156,4 +157,5 @@ public class TestObjectInspectorUtils extends TestCase {
     assertEquals("", 6, bucketId);
     assertEquals("", bucketId, ObjectInspectorUtils.getBucketNumber(hashCode, 16));
   }
+    
 }
